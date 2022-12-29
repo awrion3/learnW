@@ -1,2 +1,2 @@
-# hub_learnW
-programming language
+learning programming language
+HTML CSS JavaScript
