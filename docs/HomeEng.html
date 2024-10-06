@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sejong University - Find Empty Classrooms 🏫</title>
+    <link rel="stylesheet" href="Home.css" />
+    <script src="Home.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>◇ 세종대 공지 게시판 ◇</h2>
+        <h1>◈ Sejong University Noticeboard ◈</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <h3>◇◆ Sejong University Remodeling Notice ◆◇</h3>
+
+            <p>
+                Due to the remodeling construction of the library, learning spaces such as the open study rooms (1F/3F)
+                and the discussion lounge (4F) are currently unavailable.
+                <br>This has led Sejong University to designate alternative classrooms for open study rooms, and the
+                details are as follows. <a href="Home.html">&#40;Translate to Korean&#41;</a>
+                <hr>
+                <b>※ Library Remodeling Construction Period: February 13, 2023 - September</b>
+            <ul>
+                <li>February 13 - Mid-April: Asbestos removal (all floors)</li>
+                <li>Mid-April - September: Interior remodeling (B1F - 4F) and HVAC work (all floors)</li>
+            </ul>
+            </p>
+
+            <div class="gallery">
+                <img src="Images/Sbuild.jpg" alt="Sejong University Library" width="450" height="300" />
+                <img src="Images/Sroom.png" alt="Sejong University Library Classrooms" width="450" height="300" />
+            </div>
+
+            <p>
+                For <b>Weekday Daytime Alternative Classrooms</b>, the available hours are 08:00 - 18:00,
+                and the available spaces are <u>Gwanggaeto Hall, Jiphyeon Hall, Yidang Hall*, Sejong Hall</u>.
+                <i>(*Discussion possible)</i>
+                <br>The available period is from March 6 (Monday) to June 21 (Wednesday), and you can find more details
+                through the <u>links</u> below.
+            <ol>
+                <li><a href="GT.html">Gwanggaeto Hall (광개토관)</a></li>
+                <li><a href="JH.html">Jiphyeon Hall (집현관)</a></li>
+                <li><a href="YD.html">Yidang Hall (이당관)</a></li>
+                <li><a href="SJ.html">Sejong Hall (세종관)</a></li>
+            </ol>
+            </p>
+
+            <p>
+                For <b>Evening Alternative Classrooms</b>, the available hours are 18:00 - 07:00 (including weekends and
+                holidays during daytime hours),
+                and the available spaces are <u>Jiphyeon Hall, Yidang Hall</u>.
+                <br>The available period is from February 13 (Monday) to August 31 (Thursday), and you can find more
+                details in the table below.
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Alternative Classroom</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Nighttime (18:00 - Next day 7:00)
+                            <br />(including weekends and holidays during daytime hours)
+                        </td>
+                        <td>Jiphyeon Hall Rooms 302/401<br />Yidang Hall Rooms 103/104/203/204</td>
+                        <td>Alternative open study rooms</td>
+                    </tr>
+                    <tr>
+                        <td>Yidang Hall Room 201</td>
+                        <td>Discussion possible</td>
+                    </tr>
+                </tbody>
+            </table>
+            </p>
+        </main>
+
+        <aside class="card">
+            <input type="button" value="night" onclick="DayNightHandler(this)">
+
+            <h4>[ Library Notice Website QR Code ]</h4>
+            <img src="Images/Clib.png" alt="Sejong University Library Notification" />
+            <h4>[ Sejong University Website QR Code ]</h4>
+            <img src="Images/Csju.jpg" alt="Sejong University Notification" />
+
+            <h4>[ Sejong Today Calendar ]</h4>
+            <div id="calendar">
+                <p id="calendar-day">
+                </p>
+                <p id="calendar-date">
+                </p>
+                <p id="calendar-month-year">
+                </p>
+            </div>
+        </aside>
+    </div>
+
+    <div class="label">
+        <footer id="contact" class="logo">
+            <h5>&lt; Contact Us &gt;</h5>
+            <form action="mailto:xelizay39@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Please Enter Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Please Enter Your Email">
+
+                <input type="submit" name="submit" value="Send" />
+            </form>
+            <img src="Images/Logo.png" alt="Sejong University Logo" />
+        </footer>
+    </div>
+</body>
+
+</html>
