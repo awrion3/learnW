@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Room Availability - Sejong-gwan</title>
+    <link rel="stylesheet" href="SJ.css">
+    <link rel="stylesheet" href="Page.css">
+    <script src="Page.js"></script>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <header>
+        <h1>◈ 세종관 Sejong-gwan ◈</h1>
+        <h3>이용 공간 : 세205, 세206</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">▣ 게시판 (Notice-board)</a></li>
+            <li><a href="GT.html"> ◆ 광개토관 (Gwanggaeto-gwan)</a></li>
+            <li><a href="JH.html"> ◆ 집현관 (Jiphyeon-gwan)</a></li>
+            <li><a href="YD.html"> ◆ 이당관 (Yidang-gwan)</a></li>
+            <li><input type="button" value="night" onclick="DayNightHandler(this)"></li>
+        </ul>
+    </nav>
+
+    <div class="flex">
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Period</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <th>08:00 ~ 18:00</th>
+                    <td style="background-color: #ffc5ba;">세Se 205<br>세Se 206</td>
+                    <td style="background-color: #fbc99d;">세Se 205<br>세Se 206</td>
+                    <td style="background-color: #fbdf9d;">세Se 205<br>세Se 206</td>
+                    <td style="background-color: #c8ddbb;">세Se 205<br>세Se 206</td>
+                    <td style="background-color: #b6e2dd;">세Se 205<br>세Se 206</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class=" figure">
+            <figure>
+                <figcaption>
+                    ◎ 세종대학교 세종관은 학생회관 옆에 위치한 건물입니다.<br />
+                    ▣ Sejong University Sejong-gwan is located next to Student Union Building.
+                </figcaption>
+                <img src="Images/PSJ.jpg" alt="Sejong-gwan" id="img" />
+            </figure>
+            <figure>
+                <figcaption>
+                    ◎ 세종대학교 세종관은 위의 지도에서 26번 위치에 자리해 있습니다.<br />
+                    ▣ Sejong University Sejong-gwan is located at Number 26 on the map below.
+                </figcaption>
+                <img src="Images/Smap.jpg" alt="Sejong University Map" id="map" onclick="zoomSwitch(this)" />
+            </figure>
+        </div>
+    </div>
+
+    <footer class="logo">
+        <img src="Images/Logo.png" alt="Sejong University Logo" />
+    </footer>
+</body>
+
+</html>
